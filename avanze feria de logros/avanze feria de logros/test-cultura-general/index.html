@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test de Cultura General</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Pantalla de introducción -->
+    <div id="intro-screen">
+      <h1>Bienvenido al Test de Cultura General</h1>
+      <p>
+        Este test pondrá a prueba tus conocimientos en varias categorías como Historia, Arte, Ciencia y Tecnología.
+        Responde correctamente la mayor cantidad de preguntas posible. ¡Buena suerte!
+      </p>
+      <button onclick="showStartScreen()">Continuar</button>
+    </div>
+
+    <!-- Pantalla para ingresar nombre -->
+    <div id="start-screen" style="display:none;">
+      <h1>Test de Cultura General</h1>
+      <input type="text" id="username" placeholder="Ingresa tu nombre"/>
+      <button onclick="startTest()">Comenzar</button>
+    </div>
+
+    <!-- Selección de categoría -->
+    <div id="category-screen" style="display:none;">
+      <h2>Elige una categoría</h2>
+      <button onclick="selectCategory('historia')">Historia</button>
+      <button onclick="selectCategory('arte')">Arte</button>
+      <button onclick="selectCategory('ciencia')">Ciencia</button>
+      <button onclick="selectCategory('tecnología')">Tecnología</button>
+    </div>
+
+    <!-- Preguntas del test -->
+    <div id="quiz-screen" style="display:none;">
+      <h2 id="question-title"></h2>
+      <div id="answers"></div>
+      <button onclick="nextQuestion()">Siguiente</button>
+    </div>
+
+    <!-- Resultados -->
+    <div id="result-screen" style="display:none;">
+      <h2>¡Test finalizado!</h2>
+      <p id="score-text"></p>
+      <h3>Resultados anteriores</h3>
+      <table>
+        <thead>
+          <tr><th>Nombre</th><th>Categoría</th><th>Puntuación</th></tr>
+        </thead>
+        <tbody id="score-table-body"></tbody>
+      </table>
+      <button onclick="location.reload()">Volver a empezar</button>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    function showStartScreen() {
+      document.getElementById("intro-screen").style.display = "none";
+      document.getElementById("start-screen").style.display = "block";
+    }
+  </script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

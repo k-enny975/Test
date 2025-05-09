@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url('paisaje.jpg'); /* Añade tu imagen aquí */
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('paisaje.jpg'); /* o 'img/paisaje.jpg' según tu carpeta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .container {
+    background-color: rgba(0,0,0,0.7);
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 50px;
+  }
+  
+  button {
+    background-color: #007BFF;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+  }
+  button {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  
+  button:active {
+    transform: scale(0.97);
+  }
+  
